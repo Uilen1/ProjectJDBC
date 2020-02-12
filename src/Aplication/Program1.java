@@ -1,3 +1,4 @@
+package Aplication;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
@@ -7,7 +8,7 @@ import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
 
-public class Program {
+public class Program1 {
 
 	public static void main(String[] args) {
 		
@@ -31,10 +32,10 @@ public class Program {
 			System.out.println(obj);
 		}
 		
-		/*System.out.println("\n===TEST 4: seller insert ===");
+		System.out.println("\n===TEST 4: seller insert ===");
 		Seller newSeller = new Seller(null, "Uilen Helei", "uilenLelles@hotmail.com", new Date(), 4000.00, department);
 		sellerDao.insert(newSeller);
-		System.out.println("Inserted! New id = " + newSeller.getId());*/
+		System.out.println("Inserted! New id = " + newSeller.getId());
 		
 		System.out.println("\n===TEST 5: seller update ===");
 		seller = sellerDao.findById(1);
